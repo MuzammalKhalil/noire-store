@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0A0A09;
+  --surface: #121210;
+  --surface-elevated: #1A1A17;
+  --gold: #C8A66B;
+  --gold-light: #DFC79B;
+  --ivory: #F1EEE7;
+  --muted: #A39D91;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0A0A09;
+  color: #F1EEE7;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0A0A09;
+  color: #F1EEE7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #C8A66B;
+  color: #0A0A09;
+}
+
+/* Custom Refined Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A09;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2925;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A66B;
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
